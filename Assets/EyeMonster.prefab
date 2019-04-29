@@ -90,7 +90,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1ec953591615f6c45a940240a9904f7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -507,6 +507,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3385860686420916350, guid: f5d5b5d06a692aa4092f313b4576f6a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8995339023313267285, guid: f5d5b5d06a692aa4092f313b4576f6a5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -515,11 +520,6 @@ PrefabInstance:
     - target: {fileID: 8995339023313267285, guid: f5d5b5d06a692aa4092f313b4576f6a5,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3385860686420916350, guid: f5d5b5d06a692aa4092f313b4576f6a5,
-        type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

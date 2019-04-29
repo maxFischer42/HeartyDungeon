@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.5377358, g: 0.4388127, b: 0.44311368, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -872,6 +872,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1892195787549391069, guid: 72ccc444134e40648a8cbbc869aa7fc1,
+        type: 3}
+      propertyPath: m_Name
+      value: Shadow (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1892195787549391066, guid: 72ccc444134e40648a8cbbc869aa7fc1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -926,11 +931,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892195787549391069, guid: 72ccc444134e40648a8cbbc869aa7fc1,
-        type: 3}
-      propertyPath: m_Name
-      value: Shadow (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ccc444134e40648a8cbbc869aa7fc1, type: 3}
@@ -1971,6 +1971,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8935992159185393696, guid: 4eb9eeb6c0fc7ff4c8f840dd4acff03f,
+        type: 3}
+      propertyPath: m_Name
+      value: Immobile Shadow
+      objectReference: {fileID: 0}
     - target: {fileID: 8935992159185393727, guid: 4eb9eeb6c0fc7ff4c8f840dd4acff03f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2025,11 +2030,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935992159185393696, guid: 4eb9eeb6c0fc7ff4c8f840dd4acff03f,
-        type: 3}
-      propertyPath: m_Name
-      value: Immobile Shadow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eb9eeb6c0fc7ff4c8f840dd4acff03f, type: 3}
@@ -4847,7 +4847,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bbc2d296dfac5084abc03cd7833cc385, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4970,7 +4970,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ff28374d195116f4baaeb45a8347e686, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13081,7 +13081,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9eced1468a4eef1428831a8e86d09916, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13404,7 +13404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6297124520535318737}
   - component: {fileID: 6297124520535318736}
-  - component: {fileID: 6297124520535318741}
   - component: {fileID: 6297124520535318739}
   - component: {fileID: 6297124520535318738}
   - component: {fileID: 6297124520535318742}
@@ -13412,13 +13411,14 @@ GameObject:
   - component: {fileID: 2356176903519834129}
   - component: {fileID: 2053381308696727744}
   - component: {fileID: 6297124520535318735}
+  - component: {fileID: 6297124520535318740}
   m_Layer: 12
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &6297124520535318735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13516,7 +13516,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6297124520535318734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 533e8c93e7571bb4cbd80b70e0357c57, type: 3}
   m_Name: 
@@ -13542,14 +13542,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6297124520535318734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d61b78f73021f024f9394a5427913b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   referenceEnemy: {fileID: 11400000, guid: cb97228fb212db0459b1a2ebb2e391e1, type: 2}
   damage: 10
---- !u!50 &6297124520535318741
+--- !u!50 &6297124520535318740
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -13561,7 +13561,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000000
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -13569,7 +13569,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 7
 --- !u!114 &6297124520535318742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13577,7 +13577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6297124520535318734}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a45b5af15142744ba3b2f86cde6dc0f, type: 3}
   m_Name: 
