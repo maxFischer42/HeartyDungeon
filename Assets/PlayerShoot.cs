@@ -9,13 +9,21 @@ public class PlayerShoot : MonoBehaviour
     public float deathTime = 3f;
     public Transform shootpos;
     public float cooldown;
-    public bool cool;
+    public bool cool = true;
     public AudioClip shootClip;
     public AudioSource aud;
+    public float maxDistance = 6f;
 
+    private void Awake()
+    {
+        StartCoroutine(Cooldown());
+    }
     // Update is called once per frame
     void Update()
     {
+        Vector3 direction = GameObject.Find("Player").transform.position - transform.position;
+        if (direction.magnitude > maxDistance)
+            return;
         if(!cool)
         {
             aud.PlayOneShot(shootClip);

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6115ddd7877b39d4e99dbbb885bb3f56, type: 3}
   m_Name: Merchant
   m_EditorClassIdentifier: 
-  damage: 1
-  health: 80
+  damage: 5
+  health: 120
   reward: {fileID: 434441204413973990, guid: 88858631f3691364d9e64a53dcfe0fe3, type: 3}

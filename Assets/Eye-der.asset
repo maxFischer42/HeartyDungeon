@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6115ddd7877b39d4e99dbbb885bb3f56, type: 3}
   m_Name: Eye-der
   m_EditorClassIdentifier: 
-  damage: 10
-  health: 3
+  damage: 15
+  health: 10
   reward: {fileID: 3616886808907558021, guid: 5a4fe92c550a381428431b45f4f66935, type: 3}

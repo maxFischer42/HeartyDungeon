@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     public AudioClip deathclip;
     public Scrollbar healthbar;
     public bool isBoss;
+    public bool pot;
     public GameObject bossObjects;
     public RuntimeAnimatorController deathAnimation;
     public Animator bossAnim;
@@ -21,8 +22,8 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         hp = myEnemy.health;
-        if(GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData.currentLevel > 1)
-            hp = hp + (GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData.currentLevel);
+        if(GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData.currentLevel > 1 && !pot)
+            hp = hp + Mathf.RoundToInt(GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData.currentLevel * 2.5f);
         mHP = hp;
     }
 
