@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f21c1625cfcc64ab7223410788238c, type: 3}
+  m_Name: PlayerInformation
+  m_EditorClassIdentifier: 
+  WASD: 1
+  health: 250
+  defense: 1
+  speed: 1
+  swordspeed: 1
+  sworddamage: 1
+  kunaispeed: 1
+  kunaidamage: 1
+  priceCatalog: 190000001900000019000000190000001900000019000000
+  ammo: 10
+  gameData: {fileID: 11400000, guid: 54677298db149f046b716db853f1af26, type: 2}
+  maxlevels: 66
+  totaldamage: 0
+  totalspent: 0
+  totalkills: 0
