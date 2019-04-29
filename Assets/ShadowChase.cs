@@ -28,7 +28,7 @@ public class ShadowChase : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         GameData data = GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData;
         speed = speed + (0.5f * data.currentLevel);
-        distance = distance - (0.2f * data.currentLevel);
+        distance = distance - (0.5f * data.currentLevel);
 
     }
 

@@ -109,7 +109,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -212,6 +212,7 @@ MonoBehaviour:
   cool: 0
   shootClip: {fileID: 8300000, guid: 4de6d0dc83b9b9849b905a200d415b7e, type: 3}
   aud: {fileID: 2382961173346826559}
+  maxDistance: 6
 --- !u!114 &4348753112730931263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +245,11 @@ MonoBehaviour:
   hurtclip: {fileID: 8300000, guid: 1ea5955c9534cb54888123a1ffe1b1e8, type: 3}
   deathclip: {fileID: 8300000, guid: 94539a368103da04e8afc02c01df357e, type: 3}
   healthbar: {fileID: 4684072237176851093}
+  isBoss: 0
+  pot: 0
+  bossObjects: {fileID: 0}
+  deathAnimation: {fileID: 0}
+  bossAnim: {fileID: 0}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   hurtColor: {r: 1, g: 0, b: 0, a: 0.85882354}
   lengthHurt: 0.2
@@ -268,6 +274,8 @@ MonoBehaviour:
   - {fileID: 4348753112730931235}
   - {fileID: 4348753112730931238}
   UI: {fileID: 8561698394910818134}
+  isBoss: 0
+  bossObjects: []
 --- !u!82 &2382961173346826559
 AudioSource:
   m_ObjectHideFlags: 0
@@ -377,7 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_audio: {fileID: 2382961173346826559}
-  dis: 10
 --- !u!1001 &6253150958376483728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,11 +507,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3385860686420916350, guid: f5d5b5d06a692aa4092f313b4576f6a5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8995339023313267285, guid: f5d5b5d06a692aa4092f313b4576f6a5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -513,6 +515,11 @@ PrefabInstance:
     - target: {fileID: 8995339023313267285, guid: f5d5b5d06a692aa4092f313b4576f6a5,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385860686420916350, guid: f5d5b5d06a692aa4092f313b4576f6a5,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

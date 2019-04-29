@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -178,6 +178,7 @@ MonoBehaviour:
   deathclip: {fileID: 8300000, guid: db5f9bec41dcc00439c12150600a725a, type: 3}
   healthbar: {fileID: 1578979128570892731}
   isBoss: 0
+  pot: 0
   bossObjects: {fileID: 0}
   deathAnimation: {fileID: 0}
   bossAnim: {fileID: 0}

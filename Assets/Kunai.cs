@@ -31,7 +31,6 @@ public class Kunai : MonoBehaviour
             newKunai.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
             StartCoroutine(Cool());
-            Destroy(newKunai, 8f);
             data.ammo--;
         }
     }

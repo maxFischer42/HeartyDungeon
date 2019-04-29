@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("dead");
         if (!win)
         {
-            SceneManager.LoadScene("Procedural");
+            SceneManager.LoadScene("Menu");
             data.Reset();
         }
         else if (win)
