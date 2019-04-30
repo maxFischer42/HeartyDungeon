@@ -10,6 +10,16 @@ public class EnemyDamageHolder : MonoBehaviour
     private void Start()
     {
         if (referenceEnemy)
-            damage = referenceEnemy.damage;
+        {
+            if(GameObject.Find("LevelGenerator").GetComponent<LevelManager>().gameData.currentLevel > 1)
+            {
+            damage = referenceEnemy.damage * GameObject.Find("LevelGenerator").GetComponent<GameData>().currentLevel;
+
+            }else
+            {
+                damage = referenceEnemy.damage;
+            }
+
+        }
     }
 }

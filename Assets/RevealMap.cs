@@ -7,7 +7,7 @@ public class RevealMap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.name == "Player")
         {
             GetComponent<SpriteRenderer>().enabled = true;
             GetComponent<SpriteRenderer>().color= Color.green;
@@ -16,7 +16,7 @@ public class RevealMap : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.name == "Player")
         {
             GetComponent<SpriteRenderer>().enabled = true;
             GetComponent<SpriteRenderer>().color = Color.white;

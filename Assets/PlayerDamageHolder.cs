@@ -13,6 +13,6 @@ public class PlayerDamageHolder : MonoBehaviour
         if(!isKunai)
         damage = (int)data.sworddamage;
         else
-        damage = (int)data.kunaidamage;
+        damage = 3 + (int)(1.5 * data.kunaidamage);
     }
 }

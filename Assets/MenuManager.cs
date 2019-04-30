@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     public GameObject tutorial;
     public GameObject tutorial2;
     public PlayerData data;
+    public Toggle toggle;
     public void Begin()
     {
         data.Reset();
@@ -22,6 +23,11 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Home))
             PlayerPrefs.SetInt("Complete", 0);
+    }
+
+    public void Tog()
+    {
+        data.loopLevel = !toggle.isOn;
     }
 
     public void Options()

@@ -69,8 +69,14 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("dead");
         if (!win)
         {
-            SceneManager.LoadScene("Menu");
             data.Reset();
+            if (data.loopLevel)
+            {
+                SceneManager.LoadScene("Procedural");
+            }
+            else
+            SceneManager.LoadScene("Menu");
+            
         }
         else if (win)
         {

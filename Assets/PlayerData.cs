@@ -20,6 +20,7 @@ public class PlayerData : ScriptableObject
     public int totaldamage;
     public int totalspent;
     public int totalkills;
+    public bool loopLevel;
 
     public void Reset()
     {
